@@ -1,0 +1,167 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f7f9fd;
+}
+
+.header {
+  height: 76px;
+  padding: 0 8%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav .signup-btn {
+  background: #2563eb;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+
+.hero {
+  padding: 105px 8%;
+  background: linear-gradient(120deg, #f0f5ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.4;
+  color: #172554;
+  margin: 24px 0;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero p {
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #1e3a8a12;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 22px;
+  cursor: pointer;
+}
+
+.features {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 24px;
+}
+
+.features h2 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 28px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.feature-card h3 {
+  color: #1e40af;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 65px 20px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
